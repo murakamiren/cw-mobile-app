@@ -1,3 +1,4 @@
+import 'package:cw_mobile_app/models/color.dart';
 import 'package:cw_mobile_app/views/home.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: CustomColor.primaryColor,
+        // primaryColor: Colors.white,
       ),
       home: HomeView(),
     );

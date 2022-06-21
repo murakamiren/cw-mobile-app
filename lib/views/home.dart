@@ -7,6 +7,7 @@ class HomeView extends HookWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("ホーム画面"),
+        elevation: 2,
       ),
       body: Center(
         child: Text("hello world"),
