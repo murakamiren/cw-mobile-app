@@ -20,21 +20,25 @@ List<PersistentBottomNavBarItem> navBarItems() {
       icon: Icon(Icons.home),
       activeColorPrimary: Colors.amber.shade700,
       inactiveColorPrimary: Colors.black54,
+      title: ("ホーム"),
     ),
     PersistentBottomNavBarItem(
       icon: Icon(Icons.search),
       activeColorPrimary: Colors.amber.shade700,
       inactiveColorPrimary: Colors.black54,
+      title: ("探す"),
     ),
     PersistentBottomNavBarItem(
       icon: Icon(Icons.favorite),
       activeColorPrimary: Colors.amber.shade700,
       inactiveColorPrimary: Colors.black54,
+      title: ("お気に入り"),
     ),
     PersistentBottomNavBarItem(
       icon: Icon(Icons.manage_accounts),
       activeColorPrimary: Colors.amber.shade700,
       inactiveColorPrimary: Colors.black54,
+      title: ("プロフィール"),
     ),
   ];
 }
