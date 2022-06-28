@@ -1,4 +1,4 @@
-import 'package:cw_mobile_app/models/color.dart';
+import 'package:cw_mobile_app/constants/color.dart';
 import 'package:cw_mobile_app/views/home.dart';
 import 'package:flutter/material.dart';
 
