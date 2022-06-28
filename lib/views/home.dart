@@ -23,6 +23,11 @@ class HomeView extends HookWidget {
               "今日のおすすめレシピ",
               style: TextStyles.heading,
             ),
+            Container(
+              width: 300,
+              height: 300,
+              color: Colors.blue,
+            )
           ],
         ),
       ),
