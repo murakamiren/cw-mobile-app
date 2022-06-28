@@ -8,25 +8,37 @@ class HomeView extends HookWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("ホーム"),
-        elevation: 0,
-      ),
-      body: Center(
-        child: TextButton(
-          child: Text(
-            "test",
-            style: TextStyle(color: Colors.amber.shade700),
-          ),
-          onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => MenuDetail(),
-              ),
-            );
-          },
+        body: CustomScrollView(
+      slivers: [
+        SliverAppBar(
+          title: Text("hello"),
         ),
-      ),
-    );
+        SliverToBoxAdapter(
+          child: Column(
+            children: [
+              Text("aaaa"),
+              SizedBox(
+                height: 800,
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MenuDetail(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "navigate",
+                  style: TextStyle(
+                    color: Colors.amber.shade700,
+                  ),
+                ),
+              )
+            ],
+          ),
+        )
+      ],
+    ));
   }
 }
