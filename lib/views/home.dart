@@ -1,3 +1,4 @@
+import 'package:cw_mobile_app/views/menuDetail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
@@ -12,7 +13,19 @@ class HomeView extends HookWidget {
         elevation: 0,
       ),
       body: Center(
-        child: Text("ホーム"),
+        child: TextButton(
+          child: Text(
+            "test",
+            style: TextStyle(color: Colors.amber.shade700),
+          ),
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => MenuDetail(),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
