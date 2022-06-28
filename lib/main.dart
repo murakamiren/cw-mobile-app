@@ -35,7 +35,12 @@ class MainApp extends HookWidget {
     return Scaffold(
       body: Routes[selectIndex.value],
       bottomNavigationBar: BottomNavigationBar(
-        fixedColor: Colors.amber.shade600,
+        type: BottomNavigationBarType.shifting,
+        fixedColor: Colors.amber.shade700,
+        unselectedItemColor: Colors.black54,
+        iconSize: 28,
+        selectedLabelStyle: const TextStyle(fontSize: 12),
+        unselectedFontSize: 10,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -43,11 +48,15 @@ class MainApp extends HookWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            label: "プロフィール",
+            label: "探す",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: Icon(Icons.favorite),
             label: "お気に入り",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.manage_accounts),
+            label: "プロフィール",
           ),
         ],
         currentIndex: selectIndex.value,
