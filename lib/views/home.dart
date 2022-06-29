@@ -15,6 +15,8 @@ class HomeView extends HookWidget {
           horizontal: 16,
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: SpacerStyles.large,
@@ -23,11 +25,6 @@ class HomeView extends HookWidget {
               "今日のおすすめレシピ",
               style: TextStyles.heading,
             ),
-            Container(
-              width: 300,
-              height: 300,
-              color: Colors.blue,
-            )
           ],
         ),
       ),
