@@ -2,11 +2,18 @@ import 'package:flutter/material.dart';
 
 class TextStyles {
   static const double _headingFontSize = 24;
+  static const double _paragraphFontSize = 16;
 
   static const heading = TextStyle(
     color: Colors.black87,
     fontSize: _headingFontSize,
     fontWeight: FontWeight.bold,
+  );
+
+  static const paragraph = TextStyle(
+    color: Colors.black87,
+    fontSize: _paragraphFontSize,
+    fontWeight: FontWeight.normal,
   );
 }
 

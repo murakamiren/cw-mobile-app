@@ -1,5 +1,5 @@
+import 'package:cw_mobile_app/components/recipeCard.dart';
 import 'package:cw_mobile_app/constants/styles.dart';
-import 'package:cw_mobile_app/views/menuDetail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
@@ -25,6 +25,25 @@ class HomeView extends HookWidget {
               "今日のおすすめレシピ",
               style: TextStyles.heading,
             ),
+            SizedBox(
+              height: SpacerStyles.base,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  RecipeCard(),
+                  SizedBox(
+                    width: SpacerStyles.base,
+                  ),
+                  RecipeCard(),
+                  SizedBox(
+                    width: SpacerStyles.base,
+                  ),
+                  RecipeCard(),
+                ],
+              ),
+            )
           ],
         ),
       ),

@@ -8,7 +8,7 @@ class ProfileView extends HookWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("ホーム画面"),
+        title: const Text("プロフィール"),
         elevation: 2,
       ),
       body: Center(

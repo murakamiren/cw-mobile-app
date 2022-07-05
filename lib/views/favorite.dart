@@ -8,7 +8,7 @@ class FavoriteView extends HookWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("ホーム画面"),
+        title: const Text("お気に入り"),
         elevation: 2,
       ),
       body: Center(
