@@ -7,10 +7,10 @@ import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 
 List<Widget> routeScreens() {
   return [
-    HomeView(),
-    SearchView(),
-    FavoriteView(),
-    ProfileView(),
+    const HomeView(),
+    const SearchView(),
+    const FavoriteView(),
+    const ProfileView(),
   ];
 }
 

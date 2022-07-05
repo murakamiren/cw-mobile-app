@@ -44,6 +44,13 @@ class HomeView extends HookWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: SpacerStyles.xl,
+            ),
+            Text(
+              "期間限定",
+              style: TextStyles.subHeading,
+            ),
           ],
         ),
       ),
