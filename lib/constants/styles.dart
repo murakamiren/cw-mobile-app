@@ -31,5 +31,6 @@ class SpacerStyles {
   static const double base = 16;
   static const double semiLarge = 24;
   static const double large = 32;
-  static const double xl = 48;
+  static const double xl = 40;
+  static const double xxl = 48;
 }
