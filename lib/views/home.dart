@@ -43,7 +43,7 @@ class HomeView extends HookWidget {
                   RecipeCard(),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
