@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: CustomColor.primaryColor),
+      theme: ThemeData(
+        primarySwatch: CustomColor.primaryColor,
+      ),
       home: PersistentTabView(
         context,
         controller: navbarController,
