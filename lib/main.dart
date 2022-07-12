@@ -17,7 +17,7 @@ class MyApp extends HookWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    final isAuth = useState(false);
+    final isAuth = useState(true);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -32,7 +32,7 @@ class MyApp extends HookWidget {
               items: navBarItems(),
               navBarStyle: NavBarStyle.style12,
             )
-          : SignInView(),
+          : const SignInView(),
     );
   }
 }
