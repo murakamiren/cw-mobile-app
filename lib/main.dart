@@ -1,6 +1,7 @@
 import 'package:cw_mobile_app/constants/color.dart';
 import 'package:cw_mobile_app/constants/route.dart';
 import 'package:cw_mobile_app/views/home.dart';
+import 'package:cw_mobile_app/views/signUp.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -10,24 +11,28 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends HookWidget {
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final isAuth = useState(false);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: CustomColor.primaryColor,
       ),
-      home: PersistentTabView(
-        context,
-        controller: navbarController,
-        screens: routeScreens(),
-        items: navBarItems(),
-        navBarStyle: NavBarStyle.style12,
-      ),
+      home: isAuth.value
+          ? PersistentTabView(
+              context,
+              controller: navbarController,
+              screens: routeScreens(),
+              items: navBarItems(),
+              navBarStyle: NavBarStyle.style12,
+            )
+          : SignUpView(),
     );
   }
 }

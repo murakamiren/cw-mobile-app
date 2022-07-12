@@ -4,6 +4,7 @@ class TextStyles {
   static const double _headingFontSize = 24;
   static const double _paragraphFontSize = 16;
   static const double _subHeadingFontSize = 20;
+  static const double _smParagraphFontSize = 12;
 
   static const heading = TextStyle(
     color: Colors.black87,
@@ -21,6 +22,12 @@ class TextStyles {
     color: Colors.black87,
     fontSize: _subHeadingFontSize,
     fontWeight: FontWeight.w600,
+  );
+
+  static const smParagraph = TextStyle(
+    color: Colors.black87,
+    fontSize: _smParagraphFontSize,
+    fontWeight: FontWeight.normal,
   );
 }
 
