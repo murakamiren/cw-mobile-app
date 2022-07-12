@@ -20,20 +20,20 @@ class HomeView extends HookWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: SpacerStyles.large,
               ),
-              Text(
+              const Text(
                 "今日のおすすめレシピ",
                 style: TextStyles.heading,
               ),
-              SizedBox(
+              const SizedBox(
                 height: SpacerStyles.base,
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                  children: [
+                  children: const [
                     RecipeCard(),
                     SizedBox(
                       width: SpacerStyles.base,
@@ -46,37 +46,37 @@ class HomeView extends HookWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: SpacerStyles.xl,
               ),
-              Text(
+              const Text(
                 "期間限定",
                 style: TextStyles.subHeading,
               ),
-              SizedBox(
+              const SizedBox(
                 height: SpacerStyles.base,
               ),
               Column(
-                children: [
+                children: const [
                   LimitedRecipeCard(),
                   SizedBox(height: SpacerStyles.base),
                   LimitedRecipeCard(),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: SpacerStyles.xl,
               ),
-              Text(
+              const Text(
                 "他にもいろいろ",
                 style: TextStyles.subHeading,
               ),
-              SizedBox(
+              const SizedBox(
                 height: SpacerStyles.base,
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                  children: [
+                  children: const [
                     RecipeCard(),
                     SizedBox(
                       width: SpacerStyles.base,

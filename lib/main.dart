@@ -1,7 +1,7 @@
 import 'package:cw_mobile_app/constants/color.dart';
 import 'package:cw_mobile_app/constants/route.dart';
 import 'package:cw_mobile_app/views/home.dart';
-import 'package:cw_mobile_app/views/signUp.dart';
+import 'package:cw_mobile_app/views/signIn.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -32,7 +32,7 @@ class MyApp extends HookWidget {
               items: navBarItems(),
               navBarStyle: NavBarStyle.style12,
             )
-          : SignUpView(),
+          : SignInView(),
     );
   }
 }

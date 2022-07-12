@@ -1,35 +1,32 @@
 import 'package:cw_mobile_app/constants/styles.dart';
+import 'package:cw_mobile_app/views/signUp.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class SingUpView extends StatelessWidget {
-  const SingUpView({Key? key}) : super(key: key);
+class SignInView extends StatelessWidget {
+  const SignInView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("アカウント作成"),
-        elevation: 0,
-      ),
       body: SafeArea(
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: SpacerStyles.semiLarge,
           ),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(
-                height: SpacerStyles.xl,
+                height: SpacerStyles.xxl,
               ),
               const Text(
-                "アカウント作成",
+                "ロゴ",
                 style: TextStyles.heading,
               ),
               const SizedBox(
-                height: SpacerStyles.xl,
+                height: SpacerStyles.xl * 2,
               ),
               const TextField(
                 decoration: InputDecoration(hintText: "email"),
@@ -39,12 +36,6 @@ class SingUpView extends StatelessWidget {
               ),
               const TextField(
                 decoration: InputDecoration(hintText: "password"),
-              ),
-              const SizedBox(
-                height: SpacerStyles.large,
-              ),
-              const TextField(
-                decoration: InputDecoration(hintText: "名前"),
               ),
               const SizedBox(
                 height: SpacerStyles.xxl * 2,
