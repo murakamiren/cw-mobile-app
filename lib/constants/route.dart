@@ -14,34 +14,50 @@ List<Widget> routeScreens() {
   ];
 }
 
-List<PersistentBottomNavBarItem> navBarItems() {
-  return [
-    PersistentBottomNavBarItem(
-      icon: const Icon(Icons.home),
-      activeColorPrimary: Colors.amber.shade700,
-      inactiveColorPrimary: Colors.black54,
-      title: ("ホーム"),
-    ),
-    PersistentBottomNavBarItem(
-      icon: const Icon(Icons.search),
-      activeColorPrimary: Colors.amber.shade700,
-      inactiveColorPrimary: Colors.black54,
-      title: ("探す"),
-    ),
-    PersistentBottomNavBarItem(
-      icon: const Icon(Icons.favorite),
-      activeColorPrimary: Colors.amber.shade700,
-      inactiveColorPrimary: Colors.black54,
-      title: ("お気に入り"),
-    ),
-    PersistentBottomNavBarItem(
-      icon: const Icon(Icons.manage_accounts),
-      activeColorPrimary: Colors.amber.shade700,
-      inactiveColorPrimary: Colors.black54,
-      title: ("プロフィール"),
-    ),
-  ];
-}
+const routes = [
+  HomeView(),
+  SearchView(),
+  FavoriteView(),
+  ProfileView(),
+];
 
-PersistentTabController navbarController =
-    PersistentTabController(initialIndex: 0);
+const List<BottomNavigationBarItem> navBarItems = [
+  BottomNavigationBarItem(icon: Icon(Icons.home), label: "ホーム"),
+  BottomNavigationBarItem(icon: Icon(Icons.search), label: "探す"),
+  BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "お気に入り"),
+  BottomNavigationBarItem(icon: Icon(Icons.manage_accounts), label: "プロフィール"),
+];
+
+
+
+// List<PersistentBottomNavBarItem> navBarItems() {
+//   return [
+//     PersistentBottomNavBarItem(
+//       icon: const Icon(Icons.home),
+//       activeColorPrimary: Colors.amber.shade700,
+//       inactiveColorPrimary: Colors.black54,
+//       title: ("ホーム"),
+//     ),
+//     PersistentBottomNavBarItem(
+//       icon: const Icon(Icons.search),
+//       activeColorPrimary: Colors.amber.shade700,
+//       inactiveColorPrimary: Colors.black54,
+//       title: ("探す"),
+//     ),
+//     PersistentBottomNavBarItem(
+//       icon: const Icon(Icons.favorite),
+//       activeColorPrimary: Colors.amber.shade700,
+//       inactiveColorPrimary: Colors.black54,
+//       title: ("お気に入り"),
+//     ),
+//     PersistentBottomNavBarItem(
+//       icon: const Icon(Icons.manage_accounts),
+//       activeColorPrimary: Colors.amber.shade700,
+//       inactiveColorPrimary: Colors.black54,
+//       title: ("プロフィール"),
+//     ),
+//   ];
+// }
+
+// PersistentTabController navbarController =
+//     PersistentTabController(initialIndex: 0);

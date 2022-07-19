@@ -13,7 +13,7 @@ class HomeView extends HookWidget {
         body: SafeArea(
       child: Container(
         margin: const EdgeInsets.symmetric(
-          horizontal: 16,
+          horizontal: SpacerStyles.base,
         ),
         child: SingleChildScrollView(
           child: Column(

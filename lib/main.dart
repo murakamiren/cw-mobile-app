@@ -14,7 +14,6 @@ void main() {
 class MyApp extends HookWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     final isAuth = useState(true);
