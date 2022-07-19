@@ -1,6 +1,7 @@
 import 'package:cw_mobile_app/constants/color.dart';
 import 'package:cw_mobile_app/constants/route.dart';
 import 'package:cw_mobile_app/views/home.dart';
+import 'package:cw_mobile_app/views/routeScreen.dart';
 import 'package:cw_mobile_app/views/signIn.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -23,15 +24,7 @@ class MyApp extends HookWidget {
       theme: ThemeData(
         primarySwatch: CustomColor.primaryColor,
       ),
-      home: isAuth.value
-          ? PersistentTabView(
-              context,
-              controller: navbarController,
-              screens: routeScreens(),
-              items: navBarItems(),
-              navBarStyle: NavBarStyle.style12,
-            )
-          : const SignInView(),
+      home: isAuth.value ? const RouteScreen() : const SignInView(),
     );
   }
 }

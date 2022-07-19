@@ -21,11 +21,25 @@ const routes = [
   ProfileView(),
 ];
 
-const List<BottomNavigationBarItem> navBarItems = [
-  BottomNavigationBarItem(icon: Icon(Icons.home), label: "ホーム"),
-  BottomNavigationBarItem(icon: Icon(Icons.search), label: "探す"),
-  BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "お気に入り"),
-  BottomNavigationBarItem(icon: Icon(Icons.manage_accounts), label: "プロフィール"),
+List<BottomNavigationBarItem> navBarItems = [
+  BottomNavigationBarItem(
+    icon: Icon(
+      Icons.home,
+    ),
+    label: "ホーム",
+  ),
+  BottomNavigationBarItem(
+    icon: Icon(Icons.search),
+    label: "探す",
+  ),
+  BottomNavigationBarItem(
+    icon: Icon(Icons.favorite),
+    label: "お気に入り",
+  ),
+  BottomNavigationBarItem(
+    icon: Icon(Icons.manage_accounts),
+    label: "プロフィール",
+  ),
 ];
 
 

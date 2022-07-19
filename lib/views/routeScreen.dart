@@ -21,6 +21,11 @@ class RouteScreen extends HookWidget {
         currentIndex: selectedIndex.value,
         onTap: onItemTapped,
         items: navBarItems,
+        selectedItemColor: Colors.amber.shade700,
+        unselectedItemColor: Colors.black54,
+        iconSize: 28,
+        selectedFontSize: 0,
+        type: BottomNavigationBarType.fixed,
       ),
     );
   }
